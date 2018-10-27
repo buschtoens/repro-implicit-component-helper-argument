@@ -1,0 +1,7 @@
+{{#let (component "foo-bar") (hash fooBar=(component "foo-bar")) as |fooBar o|}}
+  {{fooBar value=1}}
+  {{component fooBar value=2}}
+  {{fooBar}}
+  {{o.fooBar value=3}}
+  {{o.fooBar}}
+{{/let}}
